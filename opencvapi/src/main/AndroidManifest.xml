@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.script.opencvapi">
+
+    <application
+            android:allowBackup="true"
+            android:name="com.script.framework.AtFairyApp"
+            android:label="@string/app_name"
+            android:supportsRtl="true">
+
+        <activity android:name="com.script.opencvapi.RequestPermissionActivity"
+                  android:exported="true"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                  />
+
+        <activity android:name="com.script.opencvapi.CompatRequestPermissionActivity"
+                  android:exported="true"
+                  android:theme="@android:style/Theme.NoDisplay"
+                  />
+
+        <service
+            android:name="com.padyun.opencvapi.YpFairyService"
+            android:enabled="true">
+        </service>
+
+        <service
+                android:name="com.script.opencvapi.AtFairyService"
+                android:enabled="true">
+        </service>
+
+        <service
+            android:name="com.script.service.RecordRespawnService"
+            android:enabled="true" />
+
+    </application>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+</manifest>

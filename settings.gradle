@@ -1,0 +1,2 @@
+include ':app', ':openCVLibrary341', ':opencvapi', ':scriptlocalsdk'
+rootProject.name='YpScripOpencvApiLibrary'
