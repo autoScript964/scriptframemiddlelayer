@@ -153,7 +153,7 @@ public class AtFairyConfig {
         }
 
 
-        private static final String OPTION_FILE_PATH1 = "/sdcard/fksd_files/uicache/task.uicfg";
+        private static final String OPTION_FILE_PATH1 = "/sdcard/yunpai_files/uicache/task.uicfg";
         private static final String OPTION_FILE_PATH2 = "/data/as/task_config/task.uicfg";
         private static final String CONFIG_FILE = "/etc/ypconfig.ini";
         private static final String USER_CONFIG_PATH = "/etc/user_config.ini";

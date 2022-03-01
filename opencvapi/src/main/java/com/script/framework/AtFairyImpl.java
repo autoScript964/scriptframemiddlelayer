@@ -999,17 +999,7 @@ public class AtFairyImpl extends AtFairy2 {
         return timex;
     }
 
-    /**
-     * 返回一个区域没有变化的时间，有变化返回0（尹晓栋版）
-     *
-     * @param leftX
-     * @param leftY
-     * @param width
-     * @param height
-     * @param sim
-     * @return
-     * @throws Exception
-     */
+
     public long mMatTime(int leftX, int leftY, int width, int height, float sim) throws Exception {
         FindResult result = new FindResult();
         result.sim = 0.1f;
